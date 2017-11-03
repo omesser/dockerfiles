@@ -38,7 +38,7 @@ echo \
                AlwaysAppendDS true
                Notifications false
                CheckThresholds false
-               EventServicePrefix \"igz_\"
+               EventServicePrefix \"${EVENT_SERVICE_PREFIX}\"
        </Node>
        Tag \"${NODE_NAME:-some_node}\"
 </Plugin>
