@@ -49,5 +49,6 @@ RUN apt-get -y --purge remove build-essential \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-ENTRYPOINT chmod -R 775 /home/ \
-    && /home/collectd.sh
+RUN chmod 775 /home/collectd.sh
+
+ENTRYPOINT /home/collectd.sh
