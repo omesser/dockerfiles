@@ -1,0 +1,17 @@
+version: 2
+
+updates:
+  - directories:
+      - "/collectd"
+      - "/elasticdump"
+      - "/jenkins-cicd"
+      - "/nginx-react-modules"
+      - "/python-multistage-secure"
+      - "/python-uv-service"
+      - "/riemann"
+      - "/statsd"
+    package-ecosystem: "docker"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "maintenance"
